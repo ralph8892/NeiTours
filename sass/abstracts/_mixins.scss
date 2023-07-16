@@ -1,0 +1,7 @@
+@mixin clearfix { // clearfix is used on an element which has an attribute of either float left / float right; since by default it's height is set to 0
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
