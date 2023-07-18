@@ -38,10 +38,10 @@ body {
 	font-size: 3.5rem;
 	text-transform: uppercase;
 	font-weight: 700;
-	display: inline-block;
+	display: inline-block; // make the color gradient span up to the end of text line only not the whole width
 	background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-	-webkit-background-clip: text;
-	color: transparent;
+	-webkit-background-clip: text; // clip the background of the text or simply put, place the background as the color of the text. This would not work if you don't set the color of the text to transparent; see the line below
+	color: transparent; // the text actually sits on top of the background, as such you need to set the text color to transparent to display the color gradient which is the background
 	letter-spacing: .2rem;
 	transition: all .2s;
 
