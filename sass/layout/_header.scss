@@ -9,6 +9,13 @@
 	/* -webkit-backface-visibility: hidden; */
 	will-change: transform;
 
+	@include respond(mobile) {
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+		/* -webkit-backface-visibility: hidden; */
+		will-change: transform;
+	}
+
 	&__logo-box {
 		position: absolute;
 		top: 4rem;

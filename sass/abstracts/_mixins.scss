@@ -23,16 +23,14 @@
  * 1800px +        - Ultrawide desktop monitors
  */
 
-@mixin respond-mobile {
-  @media (max-width: 600px) { @content };
-}
-
 /*
   $breakpoints
   - mobile
   - tab-port
   - tab-landsc
   - wide-deskt
+
+  ORDER: Base + typography > general layout + grid > page layout > components
 
   - 1em = 16px
 */
