@@ -86,21 +86,24 @@
     @include respond(tab-mobile) {
       display: inline-block;
       width: 50%;
-      height: 14.8rem;
+      background-size: cover;
+      // height: 14.8rem;
       float: left;
     }
 
     @include respond(tab-port) {
       display: inline-block;
       width: 50%;
-      height: 22.3rem;
+      background-size: cover;
+      // height: 22.3rem;
       float: left;
     }
 
     @include respond(tab-landsc) {
       display: inline-block;
       width: 50%;
-      height: 22.3rem;
+      background-size: cover;
+      // height: 22.3rem;
       float: left;
     }
   }
