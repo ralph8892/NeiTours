@@ -662,9 +662,33 @@ body {
   transform: translate(-50%, -50%) scale(0.25);
   transition: all 0.5s 0.2s;
 }
+@media (max-width: 56.25em) {
+  .popup__content {
+    display: block;
+  }
+}
+@media (max-width: 75em) {
+  .popup__content {
+    display: block;
+  }
+}
 .popup__left {
   width: 33.333333%;
   display: table-cell;
+}
+@media (max-width: 56.25em) {
+  .popup__left {
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+  }
+}
+@media (max-width: 75em) {
+  .popup__left {
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+  }
 }
 .popup__right {
   width: 66.6666667;
@@ -672,9 +696,39 @@ body {
   vertical-align: middle;
   padding: 3rem 5rem;
 }
+@media (max-width: 56.25em) {
+  .popup__right {
+    width: 100%;
+    padding: 0 3rem 5rem 3rem;
+    display: block;
+  }
+}
+@media (max-width: 75em) {
+  .popup__right {
+    width: 100%;
+    padding: 0 3rem 5rem 3rem;
+    display: block;
+  }
+}
 .popup__img {
   display: block;
   width: 100%;
+}
+@media (max-width: 56.25em) {
+  .popup__img {
+    display: inline-block;
+    width: 50%;
+    height: 22.3rem;
+    float: left;
+  }
+}
+@media (max-width: 75em) {
+  .popup__img {
+    display: inline-block;
+    width: 50%;
+    height: 22.3rem;
+    float: left;
+  }
 }
 .popup__text {
   font-size: 1.4rem;
@@ -689,6 +743,38 @@ body {
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
+}
+@media (max-width: 37.5em) {
+  .popup__text {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    -moz-column-count: 1;
+    -moz-column-gap: 0;
+    -moz-column-rule: none;
+    column-count: 1;
+    column-gap: 0;
+    column-rule: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -webkit-hyphens: none;
+    hyphens: none;
+  }
+}
+@media (max-width: 56.25em) {
+  .popup__text {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    -moz-column-count: 1;
+    -moz-column-gap: 0;
+    -moz-column-rule: none;
+    column-count: 1;
+    column-gap: 0;
+    column-rule: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -webkit-hyphens: none;
+    hyphens: none;
+  }
 }
 .popup:target {
   opacity: 1;
