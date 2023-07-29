@@ -23,12 +23,19 @@
     width: 15rem;
     height: 15rem;
     float: left;
-    -webkit-shape-outside: circle(50% at 50% 50%); // for this property to work, the element must have a set width, height, and float either left or right
-    shape-outside: circle(50% at 50% 50%);
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
+    
     transform: translateX(-3rem) skewX(12deg); // for moving elements that are floated use transform instead of fiddling around the margin and the padding
     position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      -webkit-shape-outside: circle(50% at 50% 50%); // for this property to work, the element must have a set width, height, and float either left or right
+      shape-outside: circle(50% at 50% 50%);
+      border-radius: none;
+    }
 
     @include respond(mobile) {
       transform: translateX(-3rem) skewX(0);
